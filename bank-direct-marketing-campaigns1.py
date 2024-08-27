@@ -9,7 +9,6 @@ Binning verilən datasetdəki kimi bir birinə çox yaxın kəsilməz dəyişən
 3. Z score
 
 """
-
 import pandas as pd
 import math
 import matplotlib.pyplot as plt
