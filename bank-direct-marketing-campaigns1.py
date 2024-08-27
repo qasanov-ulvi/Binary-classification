@@ -202,8 +202,7 @@ for col in numeric_columns:
     optb = OptimalBinning(name=col, dtype="numerical", solver="cp")
     optb.fit(df[col], df['y(dependent _variable)'])
     binning_table = optb.binning_table.build()
-    
-    # Yeni sütun eklenmesi
+
     df[f'{col}_binned'] = optb.transform(df[col], metric="bins")
 
     binned_columns.append(f'{col}_binned')
