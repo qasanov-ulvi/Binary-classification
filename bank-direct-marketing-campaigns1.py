@@ -21,6 +21,11 @@ df.info()
 
 print(df.describe())
 
+df.drop_duplicates(inplace=True)
+
+df.info()
+print(df.describe())
+
 """
 for x in df.columns:
     print(df[x].value_counts())
